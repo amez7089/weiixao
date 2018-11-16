@@ -14,7 +14,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 #打开用例文件，读取对应用例的用户名等数据
 # casefile = xlrd.open_workbook('D:\\test\\mrbtest1.xls', formatting_info=True)
-casefile = xlrd.open_workbook('E:\\weixiao\\mrbtest1.xls', formatting_info=True)
+casefile = xlrd.open_workbook('E:\\weiixao\\mrbtest1.xls', formatting_info=True)
 #设置日期格式
 style1 = xlwt.XFStyle()
 style1.num_format_str = 'YYYY-MM-DD HH:MM:SS'
@@ -215,7 +215,7 @@ finally :
     ws.write(1,10, u'周楚奇')
     ws.write(1,11, datetime.now(), style1)
     #利用保存时同名覆盖达到修改excel文件的目的,注意未被修改的内容保持不变
-    wb.save('E:\\gitworksqace\\mrbdome1\\test1\\mrb_automation_test\\mrbtest1.xls')
+    wb.save('E:\\weiixao\\mrbtest1.xls')
     #退出浏览器
     driver.quit()
     print "Enteryexercise.py运行结束！！！)"
